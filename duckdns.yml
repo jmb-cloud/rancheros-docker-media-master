@@ -8,7 +8,7 @@ rancher:
         PUID: 1020
         PGID: 1020
         TZ: Australia/Sydney
-        SUBDOMAINS: acchome
+        SUBDOMAINS: home
         TOKEN: token
         LOG_FILE: true
       volumes:
