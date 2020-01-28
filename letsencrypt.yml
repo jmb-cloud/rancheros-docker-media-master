@@ -13,12 +13,14 @@ rancher:
         PGID: 1020
         TZ: Australia/Sydney
         URL: duckdns.org
-        SUBDOMAINS: fruit-nextcloud
+        SUBDOMAINS: accome
         VALIDATION: http
-        EMAIL: user@fruit.org
+        EMAIL: jean@fruit.org
         ONLY_SUBDOMAINS: 'true'
+        EXTRA_DOMAINS: next.birag.com
       ports:
       - 443:443
       - 80:80
       volumes:
       - /mnt/nfs-1/config/letsencrypt:/config
+      - /mnt/nfs-1/config/letsencrypt/etc/letsencrypt:/le-ssl
